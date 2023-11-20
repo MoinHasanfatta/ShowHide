@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show n Hide</title>
+</head>
+<body>
+    <h1 id="hh"> I am a Heading </h1>
+    <button onclick="hide()"> Click </button>
+
+    <h2 id="hhh"> I am a Second Heading</h2>
+    <button onclick="nothing()"> Hide </button>
+
+    <h1 id="hy"> I am the Last Heading</h1>
+    <button onclick="goAway()"> Visible </button>
+
+    <script>
+
+        let a = document.getElementById('hh')
+        console.log(a)
+
+        let b = document.getElementById('hhh')
+        console.log(b)
+
+        let c = document.getElementById('hy')
+        console.log(c)
+
+        function hide(){
+            a.style.display = "none"
+        }
+
+        function nothing(){
+            b.style.opacity = "0"
+        }
+
+        function goAway(){
+            c.style.visibility = "hidden"
+        }
+        </script>
+
+</body>
+</html>
